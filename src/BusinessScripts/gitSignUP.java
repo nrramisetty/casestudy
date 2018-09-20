@@ -13,7 +13,7 @@ import PageObjects.Git;
 import Utilities.ExcelReader;
 import Utilities.log4j;
 
-public class gitSignUP {
+public class GitSignUP {
 
 	@Test
 	public void gitHubUserRegistration()

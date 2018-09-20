@@ -9,7 +9,7 @@ import com.jayway.restassured.response.Response;
 
 import APITests.RestTest;
 
-public class gitAPITestCase {
+public class GitAPITestCase {
 		
 		/*
 		 * Validate response with AccessToken
