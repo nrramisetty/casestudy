@@ -1,4 +1,4 @@
-package APITests;
+package apitest;
 
 import static org.hamcrest.Matchers.notNullValue;
 
@@ -16,7 +16,7 @@ import com.jayway.restassured.builder.RequestSpecBuilder;
 import com.jayway.restassured.response.Response;
 import com.jayway.restassured.specification.RequestSpecification;
 
-import Utilities.Propertie;
+import utilities.Propertie;
 
 
 public class RestTest {

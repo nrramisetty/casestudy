@@ -1,4 +1,4 @@
-package ActionDriver;
+package actiondriver;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 
-import BaseDriver.Browser;
+import basedriver.Browser;
 
 public class UDF {
 	

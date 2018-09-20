@@ -1,4 +1,4 @@
-package BusinessScripts;
+package businessscripts;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.jayway.restassured.response.Response;
 
-import APITests.RestTest;
+import apitest.RestTest;
 
 public class GitAPITestCase {
 		

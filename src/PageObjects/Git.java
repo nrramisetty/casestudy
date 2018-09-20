@@ -1,11 +1,11 @@
-package PageObjects;
+package pageobjects;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import ActionDriver.*;
-import Utilities.ExcelReader;
-import Utilities.log4j;
+import actiondriver.*;
+import utilities.ExcelReader;
+import utilities.log4j;
 
 public class Git {
 	
