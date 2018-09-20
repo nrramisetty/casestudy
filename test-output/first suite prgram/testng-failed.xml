@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [first suite prgram]">
+  <listeners>
+    <listener class-name="Utilities.Listener"/>
+  </listeners>
+  <test name="PObyt method(failed)">
+    <classes>
+      <class name="BusinessScripts.pobytSignIN">
+        <methods>
+          <include name="psignIN"/>
+        </methods>
+      </class> <!-- BusinessScripts.pobytSignIN -->
+    </classes>
+  </test> <!-- PObyt method(failed) -->
+</suite> <!-- Failed suite [first suite prgram] -->

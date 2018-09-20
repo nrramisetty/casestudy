@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="first suite prgram">
+    
+    <listeners>
+        
+        <listener class-name="Utilities.Listener"></listener>
+    </listeners>
+    
+  <test name="Gmail SignIN" description= "this is Gmail signin method">		
+
+      		<classes>
+	
+      		    	<class name="BusinessScripts.gmailSignIN" />
+      		    
+							
+		</classes>
+	</test> 
+	
+  <test name="PObyt method" description= "this is pobyt program">		
+
+      		<classes>
+	
+      		    	<class name="BusinessScripts.pobytSignIN" />
+      		    
+							
+		</classes>
+	</test> 
+  
+    
+</suite>    
+
+    

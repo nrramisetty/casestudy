@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="first suite prgram">
+    
+  <test name="m1 method execution" description= "this is my first testng program">		
+
+      		<classes>
+	
+      		    	<class name="seleniumStarts.testAniDemo" />
+      		    	<groups>
+      		    	    <run>
+      		    	       <include name="rg" ></include> 
+      		    	            <include name="sanity" ></include>  
+      		    	      
+      		    	      
+      		    	    </run>
+      		    	    
+      		    	</groups>
+							
+		</classes>
+	</test> 
+  
+    
+</suite>    
+
+    
