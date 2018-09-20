@@ -1,4 +1,4 @@
-package businessscripts;
+package BusinessScripts;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,10 +8,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import basedriver.Browser;
-import pageobjects.Git;
-import utilities.ExcelReader;
-import utilities.log4j;
+import BaseDriver.Browser;
+import PageObjects.Git;
+import Utilities.ExcelReader;
+import Utilities.log4j;
 
 public class GitSignUP {
 
