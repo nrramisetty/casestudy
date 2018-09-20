@@ -20,7 +20,7 @@ public class Git {
 	}
 	
 	
-	public void gitSignUp(String SheetName) throws IOException
+	public void gitSignUp(String SheetName) throws IOException, InterruptedException
 	{
 		
 		
@@ -37,8 +37,11 @@ public class Git {
 		UDF.clickElement("xpath", "//*[text()='Sign up for GitHub']");
 		log4j.infoLog("Account created sucesfully");
 		wait.waitforElementVisible(UDF.getLocator("id", "signup_button"));
+		Thread.sleep(2000);
 		UDF.clickElement("id", "signup_button");
-		wait.waitforElementVisible(UDF.getLocator("xpath", "//*[text()='Continue']"));
+		wait.waitforElementVisible(UDF.getLocator("xpath", "//*[@class='btn btn-primary js-choose-plan-submit']"));
+		UDF.clickElement("xpath", "//*[@class='btn btn-primary js-choose-plan-submit']");
+		wait.waitforElementVisible(UDF.getLocator("id", "answers_98_choice_476"));
 		UDF.clickElement("id", "answers_98_choice_476");
 		UDF.clickElement("id", "answers_99_choice_464");
 		UDF.clickElement("id", "answers_100_choice_470");
