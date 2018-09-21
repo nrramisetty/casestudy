@@ -9,4 +9,5 @@ JAVA,TestNG,Maven,Log4J,Seleimum WebDriver,apache.poi,Listners
 
 # we can run business scripts(actual test case execution files) or direct run the testNG file (TestSuite.xml)  
 # added all the test cases into single executable file with TestNG annoatation(means mutliple test cases added into one java file with @Test)
+# if we want to run github registration multiple times, please modify user name & email in the Registration.xlsx file otherwise it will throw duplicate error
 
