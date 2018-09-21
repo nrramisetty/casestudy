@@ -16,7 +16,7 @@ import BaseDriver.Browser;
 
 public class UDF {
 	
-	static WebDriver driver=Browser.getDriver();
+	public static WebDriver driver=Browser.getDriver();
 	
 	public static By getLocator(String attributType,String attributeValue)
 	{

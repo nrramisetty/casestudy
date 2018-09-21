@@ -1,5 +1,6 @@
 package Utilities;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -29,11 +30,13 @@ public class Propertie {
 	}
 	
 	public void setKeyalue(String Key,String value) throws IOException
-	{
-		FileOutputStream output=new FileOutputStream(FileName);
+	{	
+		proper.load(new FileInputStream(new File(FileName)));
 		proper.setProperty(Key, value);
+		FileOutputStream output=new FileOutputStream(FileName);
 		proper.store(output, "FileCreated");
 	}
+
 	
 	public void removeKeyalue(String Key) throws IOException
 	{	proper.load(input);
