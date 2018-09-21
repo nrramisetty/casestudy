@@ -11,3 +11,6 @@ JAVA,TestNG,Maven,Log4J,Seleimum WebDriver,apache.poi,Listners
 # added all the test cases into single executable file with TestNG annoatation(means mutliple test cases added into one java file with @Test)
 # if we want to run github registration multiple times, please modify user name & email in the Registration.xlsx file otherwise it will throw duplicate error
 
+# for one of the test case we used access token to validate authentication which will get revoked by github. so requesting to please replace access token with 'c3a6132863291318d2131deaf7a369b1b6c0a02d' in GitAPITestCase.java otherwise case will fail. commiting this case as commented, if we want to run uncomment it and provide above access token and run it
+
+

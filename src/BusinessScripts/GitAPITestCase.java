@@ -17,17 +17,17 @@ public class GitAPITestCase {
 	
 	//basic authentication Validation
 	
-	@Test
+/*	@Test
 	public void gitWithBasicAuthenticationValidations() throws FileNotFoundException, IOException
 	{	
 		System.out.println("-------Start of Test gitWithBasicAuthenticationValidations--------------");
 		api=new RestTest();
-		Response responce=api.restGet("?access_token=086e41f2f6410a314c5e6e6ae7941d1f4a0ca8e8");
+		Response responce=api.restGet("?access_token=c3a6132863291318d2131deaf7a369b1b6c0a02d1");
 		System.out.println("Status code is : "+responce.getStatusCode());
 		System.out.println(responce.asString());
 		Assert.assertEquals(responce.getStatusCode(),200,"Authentication status");
 
-	}
+	}*/
 
 	//Validate the url with state=open and verifing the response
 	
