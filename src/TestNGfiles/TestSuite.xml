@@ -6,21 +6,21 @@
 		<listener class-name="Utilities.Listener"></listener>
 	</listeners>
 
-	<test name="Gmail SignIN" description="this is Gmail signin method">
+	<test name="GitAPITestCase" description="GIT API get issues based on status">
 
 		<classes>
 
-			<class name="BusinessScripts.gitAPITestCase" />
+			<class name="BusinessScripts.GitAPITestCase" />
 
 
 		</classes>
 	</test>
 
-	<test name="PObyt method" description="this is pobyt program">
+	<test name="GitSignUP" description="this is creating an account in GitHub">
 
 		<classes>
 
-			<class name="BusinessScripts.gitSignUP" />
+			<class name="BusinessScripts.GitSignUP" />
 
 
 		</classes>

@@ -16,10 +16,21 @@ import com.jayway.restassured.builder.RequestSpecBuilder;
 import com.jayway.restassured.response.Response;
 import com.jayway.restassured.specification.RequestSpecification;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+
+
 import Utilities.Propertie;
 
 
 public class RestTest {
+	
+	public static List<String> list = new ArrayList<String>();
 	
 	String restAPIURL;
 	public RestTest() throws FileNotFoundException, IOException 
@@ -79,6 +90,38 @@ public class RestTest {
 		Assert.assertEquals(200, response.getStatusCode());
 	}
 
+	
+	public static List<String> getValue(String key,String Json)
+	{
+		JsonParser p = new JsonParser();
+        check(key, p.parse(Json));
+        System.out.println(list);
+        return list;
+	}
+	private static void check(String key, JsonElement jsonElement) {
+		
+        if (jsonElement.isJsonArray()) {
+            for (JsonElement jsonElement1 : jsonElement.getAsJsonArray()) {
+                check(key, jsonElement1);
+            }
+        } else {
+            if (jsonElement.isJsonObject()) {
+                Set<Map.Entry<String, JsonElement>> entrySet = jsonElement
+                        .getAsJsonObject().entrySet();
+                for (Map.Entry<String, JsonElement> entry : entrySet) {
+                    String key1 = entry.getKey();
+                    if (key1.equals(key)) {
+                        list.add(entry.getValue().toString());
+                    }
+                    check(key, entry.getValue());
+                }
+            } else {
+                if (jsonElement.toString().equals(key)) {
+                    list.add(jsonElement.toString());
+                }
+            }
+        }
+    }
 
 	
 }
